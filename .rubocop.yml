@@ -1,0 +1,18 @@
+require: rubocop-rails
+
+AllCops:
+  NewCops: enable
+  Include:
+    - '**/Rakefile'
+    - '**/config.ru'
+    - 'lib/tasks/**/*'
+    - 'app/**/*.rb'
+    - 'lib/**/*.rb'
+    - 'spec/**/*.rb'
+  Exclude:
+    - Gemfile*
+    - 'db/**/*'
+    - 'config/**/*'
+    - 'bin/**/*'
+Documentation:
+  Enabled: false
